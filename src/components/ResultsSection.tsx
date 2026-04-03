@@ -5,39 +5,34 @@ import { useState } from 'react'
 
 const galleryImages = [
   {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDdKvd8JyKCy8k5R-u3usQWqbAXjQg22ennGYYPcniOop8VAWM3r1uEKrhpkvXKRe3uJ5l90TIPp2uH7oDwDx9wSaSdaUiuxwj16_wbbw7KDnu9NXDls9eE06SYuQ5YKNyVqWvN4ncsEn604pHzGHdvtd-wyVopaC2kENgnhGHJ9E2FB6IRAstmw8prXk-NK9Q3msosa72A_q3WNdvCMxKSVKTXrVPTAMdTeGEY16Xf2RglEqkGqznfuEaNFzBnYjLtm0LbyzgdFeJw',
+    src: '/resultados/Resultado 1.jfif',
     label: 'Protocolo Diamond',
     title: 'Rejuvenescimento Facial 360º',
   },
   {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC3OesbXebsIc19ywbNEtIPDG1p_MUieksp1WOQlSye3-pOjEsxled_Ye2_HmAeiaQN0tzv_LH6CVcIw_5lwaWFFKOMjRie3twauMyBZgWUyA17SgWkmoJSqvoNOB3t2H2AC2bu3q4Cy_8A04ksyhyaxxydZBbfw4uOOnmPCjK42iqgPoQjMP06RJlVr4iYAoQLf-ny0j0RQc6deD39wRYXMJh3NKyrpv9T5jz_UZLVGeieripTOEw81vPWA7ND45ilh-T3ISwohQ8_',
+    src: '/resultados/Resultado 2.jfif',
     label: 'Contorno Facial',
     title: 'Perfil Contornado',
   },
   {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuASco_BS0atxe6wh490VlWSDUdgNdVymMOZ72GdumChdzlwllnb-PNXXocwksx0_cpVRSOC4r5DdMIbD4KSk1Vls51oOKkFqDTRLFViweSRwsWZ7TItqCPOFtXO1yj0eDJRLKf8YZ7u7uSZSIBJoP5ve1hJ1yJTuG3142zSyNlwHLn_hUKKs8l5vOACb2ITmu5mlYJXWcDNe2zM3cxjtJ3halnOnm_QAlJPs636D6WcV-V9OV7UArQKH0TbO2RKrFvl1fL9ThLpEo5P',
+    src: '/resultados/Resultado 3.jpg',
     label: 'Skin Quality',
     title: 'Luminosidade & Textura',
   },
   {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBeI6KYEd3mCAB-iENPnrRZZSbLZflBt6_jhDVoDKtcTMhTaUwyXpFFmjBsGi05aV0G4fuD-znK2wYOnmUjTvQbcBOdoQV5DpLVhUx82YR990j3C6NROg8KkkR3258Oq6afUQY1G5i9t75zRyQeRCT_YzYcDHItifnMTB6qVSvTSa2AMKmsi6ECOzUnHRJuck1W56eKTLl9wDk2-HeFcup27VHFNCNTVQ7k6xelcvslv8tl3jh5lsviVDyt1mf5NqZGMFsEzimBbaAz',
+    src: '/resultados/Resultado 4.jpg',
     label: 'Peeling',
     title: 'Textura Uniforme',
   },
   {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCkkqslI5A3b5eQazsTgVLW8XG96VnUPQW70XuJA2PUKUEWUdK7yUHNGZzdCwdSdOHqanOriG1cj1QcAO-A1i5LmqQn8brztwWCjbOqRyTUsnFBl3P1mkxODmlwrRITNoU14f9BROUX8IA1vHIlshqUoNw_45hvJqEGUjVmVdGWO4K7tU-i423xKF5SKxs1VwDiubuk9PIxStfffAh7PGjcSMmSGyA5ms7FM_LFy4TzqcaZd5fiJjN-L1_kKMPkA5_6vMrmXW1t9E56',
+    src: '/resultados/Resultado 5.jpg',
     label: 'Preenchimento',
     title: 'Volume Natural',
   },
   {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDA4JDy_oC449RI3VrinIJkz863G0pdjcNMhIld5Xyr3zucHaqyUUIAl-6mc_KYjBdEpRCcSW_ZsVvCC1i6Pdcwp1QPLLb1VHR3CGI2LEbm5BA6FNWTOF-qQDLxtk27n_gq7yMBe-p7WU7CFkaFie4evTxMp-F40BjahFZ3HUvSzS788nxt6JrdwpZR_S3_i-d93SL2qAB_Z0wVf-pblwlVZkQ6TTi6kA1C8xabPuqC78ogj5_xoe2FC_zQr-gXWhWGGYKrb6xF_9yE',
+    src: '/resultados/Resultado 6.jpg',
     label: 'Lifting',
     title: 'Efeito Up',
-  },
-  {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAh0dbgpX_PvUpT2JmZpOxJ3_7u9uigzDluT5Rvu26_nn4_CN0UmWpl_YXTjrtzPjejB_8ycpVH9t6iqgmXLqLuCLBgeFZ3UrZF9sb2QCx4M-Q0itSxHHUM3rsc3-7D2yLpV1GBgWHcYtMt9m3TelXB-PvwQBQmX-3hrTBcBVZ-sydqE20b5_1BAXw71lzYopf1DWbWOFv_Wu6py81IA0jxSNrt3teLwiVN-FUtpTkByxFLJoo753wdpT5NzwiV6U7T4NuepoATO1',
-    label: 'Laser',
-    title: 'Luminosidade',
   },
 ]
 
