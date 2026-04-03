@@ -25,7 +25,7 @@ export default function Header() {
       }`}
     >
       {/* Logo */}
-      <div className="font-serif text-2xl font-light tracking-widest text-on-surface">
+      <div className="font-serif text-[19px] font-light tracking-widest text-on-surface">
         BELLA DERMA
       </div>
 
