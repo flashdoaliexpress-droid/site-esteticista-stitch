@@ -5,32 +5,32 @@ import { useState } from 'react'
 
 const galleryImages = [
   {
-    src: '/resultados/Resultado 1.jfif',
+    src: '/resultados/resultado-1.jfif',
     label: 'Protocolo Diamond',
     title: 'Rejuvenescimento Facial 360º',
   },
   {
-    src: '/resultados/Resultado 2.jfif',
+    src: '/resultados/resultado-2.jfif',
     label: 'Contorno Facial',
     title: 'Perfil Contornado',
   },
   {
-    src: '/resultados/Resultado 3.jpg',
+    src: '/resultados/resultado-3.jpg',
     label: 'Skin Quality',
     title: 'Luminosidade & Textura',
   },
   {
-    src: '/resultados/Resultado 4.jpg',
+    src: '/resultados/resultado-4.jpg',
     label: 'Peeling',
     title: 'Textura Uniforme',
   },
   {
-    src: '/resultados/Resultado 5.jpg',
+    src: '/resultados/resultado-5.jpg',
     label: 'Preenchimento',
     title: 'Volume Natural',
   },
   {
-    src: '/resultados/Resultado 6.jpg',
+    src: '/resultados/resultado-6.jpg',
     label: 'Lifting',
     title: 'Efeito Up',
   },
