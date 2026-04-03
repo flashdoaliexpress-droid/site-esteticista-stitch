@@ -18,14 +18,14 @@ export default function Header() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 flex justify-between items-center px-5 md:px-12 py-4 md:py-6 max-w-screen-2xl mx-auto transition-all duration-300 ${
         scrolled
           ? 'bg-surface-container-lowest/90 backdrop-blur-md shadow-sm border-b border-outline-variant/50'
           : 'bg-background/80 backdrop-blur-md'
       }`}
     >
       {/* Logo */}
-      <div className="font-serif text-[19px] font-light tracking-widest text-on-surface">
+      <div className="font-serif text-[19px] font-light tracking-widest text-on-surface whitespace-nowrap">
         BELLA DERMA
       </div>
 
@@ -54,7 +54,7 @@ export default function Header() {
       {/* CTA */}
       <button
         onClick={handleBooking}
-        className="bg-primary text-on-primary px-7 py-3 rounded-full font-label text-sm font-semibold tracking-widest uppercase transition-all shadow-md hover:bg-primary/90 active:scale-95"
+        className="bg-primary text-on-primary px-5 py-2.5 md:px-7 md:py-3 rounded-full font-label text-[10px] md:text-sm font-semibold tracking-widest uppercase transition-all shadow-md hover:bg-primary/90 active:scale-95 whitespace-nowrap"
         aria-label="Agendar consulta via WhatsApp"
       >
         Agendar Consulta
