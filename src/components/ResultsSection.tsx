@@ -124,8 +124,8 @@ export default function ResultsSection() {
           </div>
 
           {/* Carousel */}
-          <div className="relative max-w-2xl mx-auto">
-            <div className="relative overflow-hidden rounded-lg aspect-square md:aspect-[4/5] lg:aspect-[3/4] max-h-[70vh] bg-gradient-to-tr from-[#f3e9dc] to-[#e6d5c1]">
+          <div className="relative w-full max-w-4xl mx-auto">
+            <div className="relative overflow-hidden rounded-lg aspect-[4/3] md:aspect-video bg-gradient-to-tr from-[#f3e9dc] to-[#e6d5c1] flex items-center justify-center">
               {galleryImages.map((img, i) => (
                 <img
                   key={img.label}
