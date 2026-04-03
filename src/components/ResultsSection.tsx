@@ -124,14 +124,14 @@ export default function ResultsSection() {
           </div>
 
           {/* Carousel */}
-          <div className="relative max-w-3xl mx-auto">
-            <div className="relative overflow-hidden rounded-lg aspect-[4/3] md:aspect-[4/3] lg:aspect-video bg-gradient-to-tr from-[#f3e9dc] to-[#e6d5c1]">
+          <div className="relative max-w-2xl mx-auto">
+            <div className="relative overflow-hidden rounded-lg aspect-square md:aspect-[4/5] lg:aspect-[3/4] max-h-[70vh] bg-gradient-to-tr from-[#f3e9dc] to-[#e6d5c1]">
               {galleryImages.map((img, i) => (
                 <img
                   key={img.label}
                   src={img.src}
                   alt={img.title}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                  className={`absolute inset-0 w-full h-full object-contain p-2 md:p-4 transition-opacity duration-500 ${
                     i === galleryIdx ? 'opacity-100' : 'opacity-0'
                   }`}
                 />
